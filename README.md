@@ -9,8 +9,7 @@ The scheduler prioritizes tasks based on the **Earliest Deadline First (EDF)** a
 ## Features
 
 - **EDF Scheduling (Earliest Deadline First)**: The scheduler dynamically selects the available task with the closest deadline to execute next.
-- **Dynamic Voltage and Frequency Scaling (DVFS) Simulation**: Each task can be assigned a frequency scaling factor (0.1 to 1.0). Power consumption scales cubically with frequency (\(P \propto f^3\)), allowing simulation of running tasks at lower frequencies to save energy.
-- **Optimized Idle (Sleep Mode)**: When no tasks are ready to execute, the processor jumps to the next arrival time rather than busy-waiting. During this period, it enters a low-power sleep mode (5mW).
+- **Dynamic Voltage and Frequency Scaling (DVFS) Simulation**: Each task can be assigned a frequency scaling factor (0.1 to 1.0). Power consumption scales cubically with frequency (P=kF^3): When no tasks are ready to execute, the processor jumps to the next arrival time rather than busy-waiting. During this period, it enters a low-power sleep mode (5mW).
 - **Performance Metrics**: Calculates and reports Waiting Time, Turnaround Time, Total Energy Consumption, and whether each task met or missed its deadline.
 
 ## Logic and Working
